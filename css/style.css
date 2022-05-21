@@ -1,0 +1,143 @@
+@font-face {
+    font-family: roboto;
+    src: url('../css/fonts/Roboto-Light.ttf');
+}
+
+* {
+
+    font-family: roboto;
+}
+
+body {
+    margin: 0;
+}
+
+
+/* global style*/
+
+button.normal {
+    background-color: #fff;
+    padding: 15px 25px;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    font-size: 15px;
+    font-weight: 700;
+
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    position: relative;
+}
+
+header nav h1 {
+    font-weight: 900;
+    font-size: 50px;
+}
+
+header .center-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header .center-text h1 {
+    font-weight: 900;
+    font-size: 55px;
+}
+
+header .center-text p {
+    font-size: 25px;
+}
+
+header .center-text .join-btn {
+    margin-top: 30px;
+}
+
+header nav {
+    width: 90%;
+    position: absolute;
+    top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0 10px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+header nav h1 {
+    margin: 0;
+}
+
+
+/* animations */
+
+.fadeMid {
+    animation: fadeMid ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.fadeRight {
+    animation: fadeInRight ease 1.5s;
+    animation-duration: 0.1;
+    animation-fill-mode: both;
+    animation-delay: 0.2s;
+}
+
+.fadeLeft {
+    animation: fadeInLeft ease 1.5s;
+    animation-duration: 0.1;
+    animation-fill-mode: both;
+    animation-delay: 0.2s;
+}
+
+@keyframes fadeMid {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
