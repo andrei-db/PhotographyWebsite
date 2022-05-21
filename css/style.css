@@ -26,6 +26,9 @@ button.normal {
 
 }
 
+
+/* HEADER */
+
 header {
     display: flex;
     align-items: center;
@@ -36,12 +39,27 @@ header {
     color: #fff;
     position: relative;
 }
-
+header nav {
+    width: 90%;
+    position: absolute;
+    top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 header nav h1 {
     font-weight: 900;
     font-size: 50px;
+    margin: 0;
 }
-
+header nav .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0 10px;
+    font-size: 20px;
+    font-weight: 700;
+    transition: color 0.3s ease 0s;
+}
 header .center-text {
     display: flex;
     justify-content: center;
@@ -56,38 +74,91 @@ header .center-text h1 {
 
 header .center-text p {
     font-size: 25px;
+    width: 50%;
+    text-align: center;
 }
 
 header .center-text .join-btn {
     margin-top: 30px;
+    background-color:#FD4E51;
+    color: #fff;
 }
 
-header nav {
-    width: 90%;
-    position: absolute;
-    top: 25px;
+/* ABOUT */
+
+#about{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#about{
+    height: 100vh;
+    margin:0 70px;
+}
+#about h1{
+    font-size: 37px;
+    margin: 15px 0 0 0;
+}
+#about h4{
+    font-size: 18px;
+    padding: 15px 0 20px;
+}
+#about .qualities{
+    display: flex;
+    justify-content: space-between;
+
+    
+}
+#about .qualities .qual-item{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    text-align: center;
+    flex-direction: column;
+    margin:0 100px;
+    padding: 0 45px;
+    border:1px solid black;
+    border-radius: 15px;
+
+}
+#about .qualities .qual-item h2{
+    font-size: 28px;
+}
+#about .qualities .qual-item p{
+    font-size: 16px;
+    line-height: 27px;
+    font-weight: 600;
+    text-align: justify;
 }
 
-header nav .nav-links a {
-    text-decoration: none;
-    color: #fff;
-    padding: 0 10px;
-    font-size: 20px;
-    font-weight: 700;
+/* WE OFFER */
+
+#weoffer {
+    height:100vh;
 }
 
-header nav h1 {
-    margin: 0;
+/* TEAM */
+
+#team{
+    height:100vh;
 }
 
+/* PORTFOLIO */
 
-/* animations */
+#portfolio{
+    height:100vh;
+}
+
+/* CONTACT */
+
+#contact{
+    height:100vh;
+}
+
+/* ANIMATIONS */
 
 .fadeMid {
-    animation: fadeMid ease 3s;
+    animation: fadeMid ease 4s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
