@@ -55,7 +55,7 @@ header nav h1 {
 header nav .nav-links a {
     text-decoration: none;
     color: #fff;
-    padding: 0 10px;
+    padding: 0 20px;
     font-size: 20px;
     font-weight: 700;
     transition: color 0.3s ease 0s;
@@ -87,55 +87,80 @@ header .center-text .join-btn {
 /* ABOUT */
 
 #about{
-    display:flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-#about{
     height: 100vh;
-    margin:0 70px;
 }
-#about h1{
-    font-size: 37px;
-    margin: 15px 0 0 0;
-}
-#about h4{
-    font-size: 18px;
-    padding: 15px 0 20px;
-}
-#about .qualities{
-    display: flex;
-    justify-content: space-between;
 
-    
-}
-#about .qualities .qual-item{
-    display: flex;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-    margin:0 100px;
-    padding: 0 45px;
-    border:1px solid black;
-    border-radius: 15px;
-
-}
-#about .qualities .qual-item h2{
-    font-size: 28px;
-}
-#about .qualities .qual-item p{
-    font-size: 16px;
-    line-height: 27px;
-    font-weight: 600;
-    text-align: justify;
-}
 
 /* WE OFFER */
 
 #weoffer {
     height:100vh;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #262626;
 }
+#weoffer .container{
+    width: 80%;
+    background-color: #111;
+    box-shadow: 5px 5px 15px rgba(0, 0,0, 0.9);
+    display :flex ;
+    height: 70%;
+
+}
+#weoffer .container .text{
+    display: flex;
+    width:30%;
+    color:#fff;
+    display:flex;
+   
+    z-index: 1;
+    
+}
+#weoffer .container .text .text-position{
+    transform: translateX(100px);
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+
+}
+#weoffer .container .text .text-position h1{
+    font-size: 37px;
+    font-weight: 700;
+}
+#weoffer .container .text .text-position p{
+    font-size: 23px;
+    line-height: 34px;
+    word-spacing: 5px;
+}
+#weoffer .container .image{
+    width:70%;
+    position:relative;
+    overflow: hidden;
+}
+#weoffer .container .image img{
+    width: 100%;
+    height: 100%;
+    
+}
+#weoffer .container .image::before{
+    content: '';
+    position: absolute;
+    background: #111;
+    width: 40%;
+    top:50%;
+    left: -120px;
+    height: 140%;
+    transform: translateY(-55%) rotate(20deg);
+} 
+
+
 
 /* TEAM */
 
@@ -158,23 +183,18 @@ header .center-text .join-btn {
 /* ANIMATIONS */
 
 .fadeMid {
-    animation: fadeMid ease 4s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
+    animation: fadeMid ease 3.5s;
+    animation-fill-mode: both;
 }
 
 .fadeRight {
     animation: fadeInRight ease 1.5s;
-    animation-duration: 0.1;
     animation-fill-mode: both;
-    animation-delay: 0.2s;
 }
 
 .fadeLeft {
     animation: fadeInLeft ease 1.5s;
-    animation-duration: 0.1;
     animation-fill-mode: both;
-    animation-delay: 0.2s;
 }
 
 @keyframes fadeMid {
@@ -195,7 +215,6 @@ header .center-text .join-btn {
 
     to {
         opacity: 1;
-        -webkit-transform: none;
         transform: none;
     }
 }
@@ -208,7 +227,6 @@ header .center-text .join-btn {
 
     to {
         opacity: 1;
-        -webkit-transform: none;
         transform: none;
     }
 }
