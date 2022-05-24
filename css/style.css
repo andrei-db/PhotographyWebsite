@@ -166,7 +166,75 @@ header .center-text .join-btn {
 
 #team{
     height:100vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
+#team .main-text{
+    text-align: center;
+}
+#team .main-text h1{
+    font-size: 50px;
+    margin:55px 0 20px;
+}
+#team .main-text p{
+    font-size: 25px;
+    margin:0;
+}
+#team .team-content{
+    display:flex;
+    width: 100%;
+    margin:75px 0 0;
+}
+#team .team-content .person-content{
+    width: 20%;
+    height: 62vh;
+    margin: 0 40px;
+}
+#team .team-content .person-content .image-content{
+
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#team .team-content .person-content .image-content .center-image{
+    border-radius: 50%;
+    border: 1px solid black;
+    height: 21vh;
+    width: 11vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+#team .team-content .person-content .image-content .center-image .img{
+    width: 100%;
+   
+}
+#team .team-content .person-content .text-content {
+    height:60%;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+#team .team-content .person-content .text-content h1{
+        font-weight: 800;
+        font-size: 30px;
+}
+#team .team-content .person-content .text-content h6{
+    font-size: 17px;
+    margin: 0;
+}
+#team .team-content .person-content .text-content p{
+    padding: 0 35px;
+    margin:40px 0;
+    font-weight: 600;
+    font-size: 17px;
+}
+
 
 /* PORTFOLIO */
 
