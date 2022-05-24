@@ -39,6 +39,7 @@ header {
     color: #fff;
     position: relative;
 }
+
 header nav {
     width: 90%;
     position: absolute;
@@ -47,11 +48,13 @@ header nav {
     align-items: center;
     justify-content: space-between;
 }
+
 header nav h1 {
     font-weight: 900;
     font-size: 50px;
     margin: 0;
 }
+
 header nav .nav-links a {
     text-decoration: none;
     color: #fff;
@@ -60,6 +63,7 @@ header nav .nav-links a {
     font-weight: 700;
     transition: color 0.3s ease 0s;
 }
+
 header .center-text {
     display: flex;
     justify-content: center;
@@ -80,13 +84,13 @@ header .center-text p {
 
 header .center-text .join-btn {
     margin-top: 30px;
-    background-color:#FD4E51;
+    background-color: #FD4E51;
     color: #fff;
 }
 
 /* ABOUT */
 
-#about{
+#about {
     height: 100vh;
 }
 
@@ -94,9 +98,9 @@ header .center-text .join-btn {
 /* WE OFFER */
 
 #weoffer {
-    height:100vh;
+    height: 100vh;
     width: 100%;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
@@ -104,102 +108,117 @@ header .center-text .join-btn {
     padding: 0;
     background-color: #262626;
 }
-#weoffer .container{
+
+#weoffer .container {
     width: 80%;
     background-color: #111;
-    box-shadow: 5px 5px 15px rgba(0, 0,0, 0.9);
-    display :flex ;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+    display: flex;
     height: 70%;
 
 }
-#weoffer .container .text{
+
+#weoffer .container .text {
     display: flex;
-    width:30%;
-    color:#fff;
-    display:flex;
-   
+    width: 30%;
+    color: #fff;
+    display: flex;
+
     z-index: 1;
-    
+
 }
-#weoffer .container .text .text-position{
+
+#weoffer .container .text .text-position {
     transform: translateX(100px);
-    display:flex;
+    display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
 
 
 }
-#weoffer .container .text .text-position h1{
+
+#weoffer .container .text .text-position h1 {
     font-size: 37px;
     font-weight: 700;
 }
-#weoffer .container .text .text-position p{
+
+#weoffer .container .text .text-position p {
     font-size: 23px;
     line-height: 34px;
     word-spacing: 5px;
 }
-#weoffer .container .image{
-    width:70%;
-    position:relative;
+
+#weoffer .container .image {
+    width: 70%;
+    position: relative;
     overflow: hidden;
 }
-#weoffer .container .image img{
+
+#weoffer .container .image img {
     width: 100%;
     height: 100%;
-    
+
 }
-#weoffer .container .image::before{
+
+#weoffer .container .image::before {
     content: '';
     position: absolute;
     background: #111;
     width: 40%;
-    top:50%;
+    top: 50%;
     left: -120px;
     height: 140%;
     transform: translateY(-55%) rotate(20deg);
-} 
+}
 
 
 
 /* TEAM */
 
-#team{
-    height:100vh;
-    display:flex;
+#team {
+    height: 100vh;
+    display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
 }
-#team .main-text{
+
+#team .main-text {
     text-align: center;
 }
-#team .main-text h1{
+
+#team .main-text h1 {
     font-size: 50px;
-    margin:55px 0 20px;
+    margin: 55px 0 20px;
 }
-#team .main-text p{
+
+#team .main-text p {
     font-size: 25px;
-    margin:0;
+    margin: 0;
 }
-#team .team-content{
-    display:flex;
+
+#team .team-content {
+    display: flex;
     width: 100%;
-    margin:75px 0 0;
+    margin: 75px 0 0;
 }
-#team .team-content .person-content{
+
+#team .team-content .person-content {
     width: 20%;
     height: 62vh;
     margin: 0 40px;
 }
-#team .team-content .person-content .image-content{
+
+#team .team-content .person-content .image-content {
 
     height: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#team .team-content .person-content .image-content .center-image{
+
+#team .team-content .person-content .image-content .center-image {
     border-radius: 50%;
     border: 1px solid black;
     height: 21vh;
@@ -210,27 +229,32 @@ header .center-text .join-btn {
     align-items: center;
     border: none;
 }
-#team .team-content .person-content .image-content .center-image .img{
+
+#team .team-content .person-content .image-content .center-image .img {
     width: 100%;
-   
+
 }
+
 #team .team-content .person-content .text-content {
-    height:60%;
-    display:flex;
+    height: 60%;
+    display: flex;
     align-items: center;
     flex-direction: column;
 }
-#team .team-content .person-content .text-content h1{
-        font-weight: 800;
-        font-size: 30px;
+
+#team .team-content .person-content .text-content h1 {
+    font-weight: 800;
+    font-size: 30px;
 }
-#team .team-content .person-content .text-content h6{
+
+#team .team-content .person-content .text-content h6 {
     font-size: 17px;
     margin: 0;
 }
-#team .team-content .person-content .text-content p{
+
+#team .team-content .person-content .text-content p {
     padding: 0 35px;
-    margin:40px 0;
+    margin: 40px 0;
     font-weight: 600;
     font-size: 17px;
 }
@@ -238,14 +262,56 @@ header .center-text .join-btn {
 
 /* PORTFOLIO */
 
-#portfolio{
-    height:100vh;
+#portfolio {
+    padding: 60px 30px;
+    height: 100vh;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
 }
+.main-div{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.main-div >div{
+    margin: 0 7px;
+    height: 100%;
+}
+
+.container{
+    display:grid;
+    grid-template-columns :repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 40%;
+     grid-gap:1rem; 
+}
+.container img{
+    height: 100%;
+    width: 100%;
+    object-fit :cover;
+    border-radius: 10px;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.6);
+}
+.image-container{
+  display:grid;
+  grid-template-columns :repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  width: auto;
+   grid-gap:1rem; 
+}
+.image-container img{
+    height: 100%;
+    width: 100%;
+    object-fit :cover;
+}
+
 
 /* CONTACT */
 
-#contact{
-    height:100vh;
+#contact {
+    height: 100vh;
 }
 
 /* ANIMATIONS */
