@@ -1,31 +1,12 @@
-const navlinks = document.querySelector("body header nav div");
 
-$(document).ready(function () {
+var pictureContainer=document.querySelectorAll('#portfolio .container-fluid .col-3');
+var pictureBtn=document.querySelectorAll('#portfolio .container-fluid .col-3 span');
 
-  window.onscroll = function () { myFunction() };
-  var navbar = document.getElementById("#nav");
-  var sticky = navbar.offsetTop;
-
-
-  function myFunction() {
-    if (window.pageYOffset >= sticky) {
-      
-      navbar.classList.add("make-it-white");
-      navlinks.classList.remove("nav-links");
-      
-
-    } else {
-      navbar.classList.remove("make-it-white");
-      navlinks.classList.add("nav-links");
-    }
-  }
-
- 
-var iconEvent=document.getElementById("icon");
-iconEvent.addEventListener("click",function(){
-  alert("gfd");
-});
-
-  
-
-});
+for(let i=0;i<pictureContainer.length;i++){
+  pictureContainer[i].addEventListener("mouseover", () => {
+    pictureBtn[i].classList.add('view-picture-a');
+  }),true;
+  pictureContainer[i].addEventListener("mouseout", () => {
+    pictureBtn[i].classList.remove('view-picture-a');
+  });
+}
